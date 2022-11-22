@@ -36,13 +36,13 @@ For example:
 
 After compiling, run:
 
-> graph-sort < input.txt > interval.txt
+> ./graph-sort < input.txt > interval.txt
 
 This command will compute the intervals corresponding to co-lex order of the nodes of the DFA stored in a text file "input.txt" and will store the result as "interval.txt" in which each line indicates the left and right end of an interval.
 
 The following command will partition the node set by coloring the interval graph: 
 
-> interval-graph-coloring < interval.txt
+> ./interval-graph-coloring < interval.txt
 
 The output will be generated to STDOUT with the third column (color ID) added.
 
