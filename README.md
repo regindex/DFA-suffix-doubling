@@ -58,7 +58,7 @@ The output will be generated to STDOUT with the third column (color ID) added.
 
 The following command will download the Human genome dataset, and run the program.
 
-> cd expr
+> cd expr\
 > ./script.sh
 
 
