@@ -20,8 +20,8 @@ int main( void ) {
             intervals.push_back( make_pair( make_pair( 2*s  , 1 ), interval_no ) );
             intervals.push_back( make_pair( make_pair( 2*e+1, 0 ), interval_no ) );
         } else {
-            intervals.push_back( make_pair( make_pair( 2*s, 1 ), interval_no ) );
-            intervals.push_back( make_pair( make_pair( 2*e, 0 ), interval_no ) );
+            intervals.push_back( make_pair( make_pair( 2*s+1, 1 ), interval_no ) );
+            intervals.push_back( make_pair( make_pair( 2*e  , 0 ), interval_no ) );
         }
         interval_no++;
     }

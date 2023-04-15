@@ -1,7 +1,6 @@
-all: graph-sort interval-graph-coloring
+TARGET=$(patsubst %.cpp,%,$(wildcard *.cpp))
 
-graph-sort: DFA.cpp graph-sort.cpp graph-sort--doubling--general-dfa.cpp graph-sort--propagation.cpp 
-	g++ $^ -o $@ -O3
+all: ${TARGET}
 
-interval-graph-coloring: interval-graph-coloring.cpp
-	g++ $^ -o $@ -O3
+%: %.cpp
+	g++ $< -O3 -std=c++14 -o $@
